@@ -6,11 +6,15 @@ We completed this analysis howevever, Maria has been told there is some academic
 ninth grade at Thomas High School. Maria has asked us to repeat the school district analysis, while replacing the math and reading scores for 
 the ninth graders at Thomas High School with NaN's in order to uphold state-testing standings. 
 
+## Resources/Data 
+[school data](Resources/schools_complete.csv)
+[student data](Resources/students_complete.csv)
+
 ## Results
 ### District Summary 
 For this analysis, the first step was to replace the ninth grade math and reading scores with NaN's.
 It was important to import NumPy, to help with replacing the scores with NaN's. Once we completed this by using the loc method and the np.nan function, we were then able to complete the district summmary again.
-![](resources/dataframe)
+![](Resources/districtsummary2.png)
 The image above shows the new district summary completed. When compared to the original summary there is not much change in the outputs. The values for average math score, average reading score, % passing math, % passing reading and % overall passing, only decrease by approximately .2 % percent at the most. When rounding to the nearest whole number, the values have stayed the same. 
 
 ### School Summary 
@@ -18,15 +22,15 @@ When we moved on to complete the school summary for the average scores and % pas
 
 However, we saw a large difference in regards to Thomas High Schools data. 
 We created a per school summary data frame that included all of the average reading and math scores along with the overall percentage of students passing in both math and reading. We we ran this analysis with taking out the ninth graders from Thomas High School, we saw a large increase in the percentages of students passing math, reading and overall. Below is the the data frame from our initial school summary, highlighting Thomas High School:
-image of schoolsummary1
+![](Resources/thomashighschoolsummary1.png)
 Below is an image of the data frame showing our updated school summary, taking out the ninth grade scores.
-image of school summary2
+![](Resources/thomashighschoolsummary2.png)
 We can see here that the percentage of student passing reading increases by 28%, the percentage of students passing math increases by 27% and the percentage of students passing overall increases by 25%.
 
 ### Thomas High School performance relative to other schools
 In our initial analysis, Thomas High School had an overall passing percentage of 65.07%, when we ran our analysis again without the ninth graders, Thomas High School's overall passing percentage increased substantially. 
 Initially, Thomas High School was ranked 8th out of the fifteen schools in regards to this statistic. Now Thomas High School ranks 2nd in % Overall Passing. This can be seen in the image below, containing the data frame showing the school summary in descending order ranked by % Overall Passing. 
-image of top schools summary 
+![](Resources/topschools.png)
 
 ### Scores per school comparison 
 #### Math and Reading scores by grade
