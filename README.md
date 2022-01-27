@@ -8,6 +8,7 @@ the ninth graders at Thomas High School with NaN's in order to uphold state-test
 
 ## Resources/Data 
 [school data](Resources/schools_complete.csv)
+
 [student data](Resources/students_complete.csv)
 
 ## Results
